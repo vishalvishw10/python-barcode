@@ -104,17 +104,11 @@ Changelog
        barcode.charsets.
 
 :v0.7: Fixed some issues with fontsize and fontalignment.
-       Added Python 3 support. It's not well tested yet, but the tests
-       run without errors with Python 3.3. Commandline script added.
+       Added Python 3 support. It's not well tested yet, but the tests run without errors with Python 3.3. Commandline script added.
 
-:v0.6: Changed save and write methods to take the options as a dict
-         not as keyword arguments (fix this in your code). Added option
-         to left align the text under the barcode. Fixed bug with EAN13
-         generation.
+:v0.6: Changed save and write methods to take the options as a dict, not as keyword arguments (fix this in your code). Added option to left align the text under the barcode. Fixed bug with EAN13 generation.
 
-:v0.5.0: Added new generate function to do all generation in one step.
-         Moved writer from a subpackage to a module (this breaks some
-         existing code). UPC is now rendered as real UPC, not as EAN13
+:v0.5.0: Added new generate function to do all generation in one step.Moved writer from a subpackage to a module (this breaks some existing code). UPC is now rendered as real UPC, not as EAN13
          with the leading "0".
 
 :v0.4.3: Fixed bug in new write method (related to PIL) and updated docs.
@@ -124,14 +118,9 @@ Changelog
 :v0.4.1: Bugfix release. Removed redundancy in input validation.
          EAN8 was broken. It now works as expected.
 
-:v0.4: Removed \*\*options from writers __init__ method. These options never
-       had effect. They were always overwritten by default_options.
-       New config option available: text_distance (the distance between
-       barcode and text).
+:v0.4: Removed \*\*options from writers __init__ method. These options never had effect. They were always overwritten by default_options. New config option available: text_distance (the distance between barcode and text).
 
-:v0.4b2: Basic documentation included. The barcode object now has a new
-         attribute called `raw` to have the rendered output without saving
-         to disk.
+:v0.4b2: Basic documentation included. The barcode object now has a new attribute called `raw` to have the rendered output without saving to disk.
 
 :v0.4b1: Support for rendering barcodes as images is implemented.
          PIL is required to use it.
